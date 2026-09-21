@@ -1,0 +1,37 @@
+{
+  "title": "DM Europe maple syrup availability",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "productDan": {
+      "title": "dm product number",
+      "type": "string",
+      "description": "dm article number of the Canadian maple syrup.",
+      "editor": "textfield",
+      "default": "1445499"
+    },
+    "marketCodes": {
+      "title": "DM country markets",
+      "type": "array",
+      "description": "Country codes to inspect.",
+      "editor": "stringList",
+      "default": ["CZ", "DE", "AT", "PL", "SK", "HU", "SI", "HR", "RO", "BG", "RS", "BA", "IT", "MK"]
+    },
+    "maxStoresPerSearch": {
+      "title": "Maximum stores per city search",
+      "type": "integer",
+      "description": "Maximum number of nearby branches read from each city search.",
+      "minimum": 1,
+      "maximum": 100,
+      "default": 60
+    },
+    "maxOutputRows": {
+      "title": "Maximum output rows",
+      "type": "integer",
+      "description": "Safety limit for branch records written to the dataset.",
+      "minimum": 1,
+      "maximum": 20000,
+      "default": 5000
+    }
+  }
+}
