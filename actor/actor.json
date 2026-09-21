@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "dm-europe-maple-availability",
+  "title": "DM Europe — Canadian Maple Syrup Availability",
+  "description": "Finds dm branches in Europe where dmBio maple syrup DAN 1445499 is currently in stock.",
+  "version": "0.1",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "input": "./input_schema.json"
+}
