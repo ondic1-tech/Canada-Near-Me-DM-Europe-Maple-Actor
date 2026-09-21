@@ -1,0 +1,31 @@
+{
+  "title": "Canada Near Me – DM direct availability",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "productDan": {
+      "title": "DM product DAN",
+      "type": "string",
+      "description": "DM article number to check.",
+      "editor": "textfield",
+      "default": "1445499"
+    },
+    "marketCodes": {
+      "title": "Markets",
+      "type": "array",
+      "description": "This pilot currently supports Germany (DE).",
+      "editor": "stringList",
+      "default": ["DE"],
+      "items": { "type": "string" }
+    },
+    "maxOutputRows": {
+      "title": "Maximum stores checked",
+      "type": "integer",
+      "description": "Maximum number of physical DM stores to check.",
+      "editor": "number",
+      "default": 300,
+      "minimum": 1,
+      "maximum": 1000
+    }
+  }
+}

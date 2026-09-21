@@ -1,0 +1,11 @@
+{
+  "name": "canada-near-me-dm-direct-api",
+  "version": "0.6.0",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "apify": "^3.7.2"
+  }
+}
